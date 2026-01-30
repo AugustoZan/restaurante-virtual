@@ -1,0 +1,198 @@
+body {
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #f2ebe5;
+    color: #694E35;
+    padding: 1rem 1rem 1rem 4rem; 
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.logo {
+    height: 70px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    color: #694E35;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+li a:hover {
+    background-color: #694E35;
+    color: #f2ebe5;
+}
+
+main {
+    flex: 1;
+}
+
+#hero {
+    background-image: url('assets/restaurant.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 5rem 2rem;
+    font-weight: bold;
+    color: #f5f5f5;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.producto {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #f2ebe5; /* Mismo color que el header para consistencia */
+    color: #694E35;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+/* Media queries para móvil */
+@media (max-width: 768px) {
+    nav { flex-direction: column; } /* Ya está en column, pero se mantiene para consistencia */
+    ul { flex-direction: column; } /* En móvil, apila los enlaces verticalmente */
+    li a { padding: 0.5rem; } /* Ajusta padding en móvil */
+}
+
+/* Estilos para el menú mejorado */
+#menu h2, #menu h3 {
+    margin-left: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    color: #694E35;
+    font-size: 1.5rem;
+}
+
+.producto h4 {
+    margin: 0.5rem 0;
+    color: #694E35;
+}
+
+.producto .descripcion {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.producto .precio {
+    font-weight: bold;
+    color: #d9534f;
+    margin: 0.5rem 0;
+}
+
+.producto button.agregar-carrito {
+    background-color: #694E35;
+    color: #f2ebe5;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.producto button.agregar-carrito:hover {
+    background-color: #4a3c2b;
+}
+
+/* Estilos para las imágenes de los  productos */
+.producto img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .producto img {
+        width: 150px; /* Tamaño más pequeño en móvil */
+        height: 120px;
+    }
+}
+
+/* Estilos para la sección de contacto */
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+#contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #694E35;
+}
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#contact-form button {
+    background-color: #694E35;
+    color: #f2ebe5;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#contact-form button:hover {
+    background-color: #4a3c2b;
+}
+
+#contacto {
+    padding: 2rem;
+    text-align: center;
+}
+
+#contacto h2 {
+    margin-bottom: 1rem;
+    color: #694E35;
+}
+
+#contacto p {
+    margin-bottom: 2rem;
+    color: #666;
+}
