@@ -1,66 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante Virtual - Ofertas</title>
-    <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante Virtual - Ofertas</title>
+  <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="assets/logo.jpg" alt="Logo" class="logo">
-            <ul>
-                <li><a href="index.html">Menú</a></li>
-                <li><a href="ofertas.html">Ofertas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="hero">
-            <h1>¡Descubre Nuestras Ofertas Especiales!</h1>
-            <p>Aprovecha descuentos exclusivos en hamburguesas, combos y más. ¡No te lo pierdas!</p>
-        </section>
-        <section id="menu">
-            <h2>Ofertas del Día</h2>
-            <div class="productos">
-                <div class="producto">
-                    <img src="assets/burger2.jpg" alt="Hamburguesa Clásica">
-                    <h3>Hamburguesa Clásica</h3>
-                    <p class="descripcion">Deliciosa hamburguesa con queso, lechuga y tomate. ¡Oferta limitada!</p>
-                    <p class="precio">$5.99</p>
-                    <button class="agregar-carrito">Agregar al Carrito</button>
-                </div>
-                <div class="producto">
-                    <img src="assets/combo.jpg" alt="Combo Familiar">
-                    <h3>Combo Familiar</h3>
-                    <p class="descripcion">4 hamburguesas, papas fritas y 4 bebidas para compartir. Descuento de 20% por cada hamburguesa.</p>
-                    <p class="precio" id="combo-precio">$0.00</p> <!-- Precio calculado en script.js -->
-                    <button class="agregar-carrito">Agregar al Carrito</button>
-                </div>
-                <div class="producto">
-                    <img src="assets/burger3.jpg" alt="Hamburguesa Vegetariana">
-                    <h3>Hamburguesa Vegetariana</h3>
-                    <p class="descripcion">Opción saludable con verduras frescas y salsa especial. ¡Gratis con pedido mayor a $15!</p>
-                    <p class="precio">$3.99</p>
-                    <button class="agregar-carrito">Agregar al Carrito</button>
-                </div>
-                <div class="producto">
-                    <img src="assets/dessert.jpg" alt="Postre del Día">
-                    <h3>Helado Artesanal</h3>
-                    <p class="descripcion">Sabor vainilla con toppings. Complementa tu pedido por solo $3.99.</p>
-                    <p class="precio">$3.99</p>
-                    <button class="agregar-carrito">Agregar al Carrito</button>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Restaurante Virtual</p>
-    </footer>
-    <script src="script.js"></script>
+  <header>
+    <nav>
+      <img src="assets/logo.jpg" alt="Logo" class="logo">
+      <div class="nav-bottom">
+        <ul>
+          <li><a href="index.html">Menú</a></li>
+          <li><a href="ofertas.html">Ofertas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <button id="lang-btn" class="lang-btn">
+          <img id="lang-flag" src="https://flagcdn.com/w40/gb.png" alt="English">
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <h1>¡Descubre Nuestras Ofertas Especiales!</h1>
+      <p>Aprovecha descuentos exclusivos en hamburguesas, combos y más. ¡No te lo pierdas!</p>
+    </section>
+    <section id="menu">
+      <h2>Ofertas del Día</h2>
+      <div class="productos">
+        <div class="producto">
+          <img src="assets/burger2.jpg" alt="Hamburguesa Clásica">
+          <h3>Hamburguesa Clásica</h3>
+          <p class="descripcion">Deliciosa hamburguesa con queso, lechuga y tomate. ¡Oferta limitada!</p>
+          <p class="precio">$5.99</p>
+          <button class="agregar-carrito">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+          <img src="assets/combo.jpg" alt="Combo Familiar">
+          <h3>Combo Familiar</h3>
+          <p class="descripcion">4 hamburguesas, papas fritas y 4 bebidas para compartir. Descuento de 20% por cada hamburguesa.</p>
+          <p class="precio" id="combo-precio">$0.00</p>
+          <button class="agregar-carrito">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+          <img src="assets/burger3.jpg" alt="Hamburguesa Vegetariana">
+          <h3>Hamburguesa Vegetariana</h3>
+          <p class="descripcion">Opción saludable con verduras frescas y salsa especial. ¡Gratis con pedido mayor a $15!</p>
+          <p class="precio">$3.99</p>
+          <button class="agregar-carrito">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+          <img src="assets/dessert.jpg" alt="Postre del Día">
+          <h3>Helado Artesanal</h3>
+          <p class="descripcion">Sabor vainilla con toppings. Complementa tu pedido por solo $3.99.</p>
+          <p class="precio">$3.99</p>
+          <button class="agregar-carrito">Agregar al Carrito</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2026 Restaurante Virtual</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -18,7 +18,15 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
+    width: 100%;
+}
+
+.nav-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .logo {
@@ -195,4 +203,26 @@ footer {
 #contacto p {
     margin-bottom: 2rem;
     color: #666;
+}
+/* ---- Botón de idioma con bandera ---- */
+.lang-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.lang-btn:hover {
+  transform: scale(1.15);
+}
+
+.lang-btn img {
+  width: 28px;
+  height: auto;
+  border-radius: 3px;
+  display: block;
+  filter: none !important; /* Evita el filtro blanco que se aplica a otros iconos */
 }

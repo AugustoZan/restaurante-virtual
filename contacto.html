@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante Virtual</title>
-    <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante Virtual - Contacto</title>
+  <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="assets/logo.jpg" alt="Logo" class="logo">
-            <ul>
-                <li><a href="index.html">Menú</a></li>
-                <li><a href="ofertas.html">Ofertas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="contacto">
-            <h2>Contáctanos</h2>
-            <p>¿Tienes alguna pregunta o quieres hacer una reserva? ¡Envíanos un mensaje!</p>
-            <form id="contact-form" action="#" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-                
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Restaurante Virtual</p>
-    </footer>
-    <script src="script.js"></script>
+  <header>
+    <nav>
+      <img src="assets/logo.jpg" alt="Logo" class="logo">
+      <div class="nav-bottom">
+        <ul>
+          <li><a href="index.html">Menú</a></li>
+          <li><a href="ofertas.html">Ofertas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <button id="lang-btn" class="lang-btn">
+          <img id="lang-flag" src="https://flagcdn.com/w40/gb.png" alt="English">
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <p>¿Tienes alguna pregunta o quieres hacer una reserva? ¡Envíanos un mensaje!</p>
+      <form id="contact-form" action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>© 2026 Restaurante Virtual</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
