@@ -44,7 +44,7 @@ cd restaurante-virtual-portafolio
 - **Enviar mensaje**: En `contacto.html`, llena el formulario y envíalo. Recibirás una confirmación por email (BCC). Revisar spam si no aparece.
 - **Responsive**: Prueba en móvil para ver el diseño adaptado.
 
-## 📸 Capturas de Pantalla (Opcional)
+## 📸 Capturas de Pantalla
 <img width="1349" height="605" alt="image" src="https://github.com/user-attachments/assets/6fef527a-f896-4146-be68-b072e90f5915" />
 <img width="1350" height="603" alt="image" src="https://github.com/user-attachments/assets/447c6f88-2fd7-4b31-bc53-e83fddef6ac4" />
 <img width="1349" height="605" alt="image" src="https://github.com/user-attachments/assets/d4b08498-f22a-43ec-be99-76aaa7ba1207" />
